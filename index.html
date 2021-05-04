@@ -3,48 +3,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmo Junkie</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        .flexbox-container {
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+        }
+        .flexbox-item {
+            background-color: white;
+            border: 3px dotted black;
+            width: 200px;
+            margin: 10px;
+        }
+
+        .flexbox-item1 {
+            min-height: 100px;
+        }
+        .flexbox-item {
+            min-height: 200px;
+        }
+        .flexbox-item3 {
+            min-height: 300px ;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="flexbox-container">
+        <div class="flexbox-item flexbox-item1">Item1</div>
+        <div class="flexbox-item flexbox-item2">Item2</div>
+        <div class="flexbox-item flexbox-item3">Item3</div>
 
-    <nav class="site-nav grid"> 
-    <h1>Cosmo Junkie</h1>
-    <ul>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#skills"></a>Skills</li>
-        <li><a href="#contact"></a>Contact</li>
-    </ul>
-    </nav>
-    <section id = "welcome" class="grid">
-        <div class="welcome-text"> 
-            <h2>Space Enthusiast <br> & JavaScript Developer</h2>
-            <p class="leading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tenetur vitae eum sint aliquid provident sapiente, tempore voluptates quam doloribus expedita beatae, dolore accusamus assumenda, exercitationem placeat recusandae nobis facilis.</p>
-            <a href="#portfolio" class="button">View My work</a>
-        </div>
-        <div class="welcome-image">
-            <img src="assets/banner_image.png" alt="pic of some planet">
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <a href="">
-            <img src="assets/project_1.png" alt="space race image">
-            <h4>Space Race Game</h4>
-        </a>
-
-        <a href="">
-            <img src="assets/project_2.png" alt="Planet Boy image">
-            <h4>Planer Boy API</h4>
-        </a>
-
-        <a href="">
-            <img src="assets/project_3.png" alt="Captain Cosmo blog image">
-            <h4>Captain Cosmo Blog</h4>
-        </a>
-
-
-    </section>
+    </div>
 </body>
 </html>
